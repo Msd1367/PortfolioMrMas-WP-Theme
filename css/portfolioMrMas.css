@@ -1,0 +1,838 @@
+/* @package portfolioMrMas */
+
+/* 
+  Generic 
+  ------------------------------------------------
+*/
+body {
+  font-family: "Raleway", "Helvetica Neue", "Helvetica", Arial, Verdana, sans-serif;
+}
+
+body.lock-scroll {
+  overflow: hidden; 
+}
+
+a {
+  text-decoration: none;
+}
+
+.background-image {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.table-cell {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+/* 
+  Header 
+  ------------------------------------------------
+*/
+.portfolioMrMas-logo {
+  font-family: "Roboto", Arial, Helvetica, sans-serif !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.header-container {
+  position: relative;
+  display: block;
+  height: 250px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.site-title {
+  margin: 0;
+  font-size: 40px;
+  color: #fff;
+}
+
+.site-description {
+  font-size: 14px;
+  margin-top: 1em;
+  color: #fff;
+}
+
+.nav-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  padding: 10px 0;
+  z-index: 10;
+}
+
+.navbar-portfolioMrMas {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-portfolioMrMas .nav {
+  display: inline-block;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.navbar-portfolioMrMas .nav li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.navbar-portfolioMrMas .nav li a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.navbar-portfolioMrMas .nav li a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.navbar-portfolioMrMas .nav li.active a {
+  border-bottom: 2px solid #fff;
+  font-weight: bold;
+  pointer-events: none;
+  cursor: default;
+  color: #fff;
+}
+
+.navbar-portfolioMrMas .nav li.active a:hover {
+  color: #fff;
+}
+
+/* 
+  Article 
+  ------------------------------------------------
+*/
+article {
+  margin-bottom: 80px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 200;
+}
+
+h1 a {
+  color: #000;
+}
+
+h1.entry-title {
+  line-height: 1.5em;
+  margin: 40px 0 0;
+  padding: 0;
+}
+
+h1.entry-title:before,
+h1.entry-title:after {
+  content: "~";
+  display: inline-block;
+  position: relative;
+}
+
+h1.entry-title:before {
+  margin-right: 10px;
+}
+
+h1.entry-title:after {
+  margin-left: 10px;
+}
+
+.entry-meta {
+  font-size: 13px;
+  font-weight: 300;
+  color: #898989;
+  margin-bottom: 20px;
+}
+
+.entry-meta a {
+  font-weight: 500;
+  color: #898989;
+}
+
+.entry-meta a:hover,
+.entry-meta a:focus {
+  color: #333;
+}
+
+.standard-featured-link {
+  display: block;
+  position: relative;
+}
+
+.standard-featured-link:hover .standard-featured:after,
+.standard-featured-link:focus .standard-featured:after {
+  background-color: transparent;
+}
+
+.standard-featured {
+  height: 330px;
+  display: block;
+  position: relative;
+}
+
+.standard-featured:after {
+  transition: background-color 320ms ease;
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.35);
+}
+
+.entry-excerpt {
+  margin: 30px 0 16px;
+}
+
+.entry-excerpt p {
+  font-size: 17px;
+  line-height: 1.5em;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
+
+.button-container {
+  margin-bottom: 30px;
+}
+
+.btn-portfolioMrMas {
+  transition: all 320ms ease;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 300;
+  color: #898989;
+  padding: 8px 12px;
+  border-radius: 0;
+  border: 1px solid #898989;
+  background-color: transparent;
+}
+
+.btn-portfolioMrMas:hover,
+.btn-portfolioMrMas:focus {
+  color: #ffffff;
+  border-color: #333;
+  background-color: #333;
+}
+
+.entry-footer {
+  padding: 10px 5px;
+  border-bottom: 4px solid #f1f1f1;
+  color: #898989;
+  text-transform: uppercase;
+}
+
+.entry-footer a {
+  color: #898989;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.entry-footer a:hover,
+.entry-footer a:focus {
+  color: #333;
+}
+
+.entry-footer .tags-list .portfolioMrMas-icon {
+  margin-right: 10px;
+}
+
+.entry-footer .tags-list a {
+  padding: 0 4px;
+}
+
+.entry-footer .comments-link .portfolioMrMas-icon {
+  margin-left: 10px;
+}
+
+/* 
+  Portfolio Image Format 
+  ------------------------------------------------
+*/
+.portfolioMrMas-format-image {
+  margin-top: 50px;
+}
+
+.portfolioMrMas-format-image .entry-header {
+  height: 600px;
+  position: relative;
+}
+
+.portfolioMrMas-format-image h1,
+.portfolioMrMas-format-image .entry-meta,
+.portfolioMrMas-format-image .entry-header {
+  color: #ffffff;
+}
+
+.portfolioMrMas-format-image h1 a,
+.portfolioMrMas-format-image .entry-meta a,
+.portfolioMrMas-format-image .entry-header a {
+  color: #ffffff;
+}
+
+.portfolioMrMas-format-image h1 {
+  padding-top: 10px;
+}
+
+.entry-excerpt.image-caption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+}
+
+.entry-excerpt.image-caption p {
+  margin: 40px 0;
+}
+
+/* 
+  Gallery Post Type 
+  ------------------------------------------------
+*/
+.gallery-post .carousel-inner {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  height: 500px;
+  align-items: center;
+  position: relative;
+}
+
+.gallery-post .carousel-item {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s ease;
+}
+
+.gallery-post .carousel-item img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  margin: auto;
+}
+
+.gallery-post .carousel-control-prev,
+.gallery-post .carousel-control-next {
+  width: 5%;
+  opacity: 0.8;
+}
+
+.gallery-post .carousel-control-prev:hover,
+.gallery-post .carousel-control-next:hover {
+  opacity: 1;
+}
+
+.gallery-post .carousel-indicators {
+  bottom: -30px;
+}
+
+.gallery-post .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.gallery-post .carousel-indicators .active {
+  background-color: #007bff;
+}
+
+/* 
+  Link Post Format 
+  ------------------------------------------------
+*/
+.embed-link {
+  margin: 20px auto;
+  font-size: 16px;
+  word-wrap: break-word;
+}
+
+.embed-link a {
+  text-decoration: none;
+}
+
+.link-box {
+  display: inline-block;
+  padding: 15px 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  color: #007bff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.link-box:hover {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.link-box i {
+  margin-right: 8px;
+}
+
+/* 
+  Pagination 
+  ------------------------------------------------
+*/
+.pagination-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.page-numbers {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #0073aa;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.page-numbers:hover {
+  background-color: #0073aa;
+  color: #fff;
+  border-color: #0073aa;
+}
+
+.page-numbers.current {
+  background-color: #0073aa;
+  color: #fff;
+  border-color: #0073aa;
+  cursor: default;
+}
+
+/* 
+  Post Navigation 
+  ------------------------------------------------
+*/
+.post-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  padding: 15px 20px;
+  background-color: #eff2f4;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.post-navigation a {
+  text-decoration: none;
+  color: #0073aa;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.post-navigation a:hover {
+  color: #005177;
+}
+
+.post-navigation .nav-previous,
+.post-navigation .nav-next {
+  flex: 1;
+  text-align: center;
+}
+
+.post-navigation .nav-previous {
+  text-align: left;
+}
+
+.post-navigation .nav-next {
+  text-align: right;
+}
+
+/* 
+  Comments Section 
+  ------------------------------------------------
+*/
+.comments-area {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comment {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.comment:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comment-author {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.comment-metadata {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+.comment-content {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.comment-reply-link {
+  font-size: 13px;
+  color: #0073aa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.comment-reply-link:hover {
+  color: #005177;
+}
+
+.comment-form {
+  margin-top: 30px;
+  padding: 25px;
+  background-color: #f4f4f4;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.comment-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.comment-form input[type="text"]:focus,
+.comment-form input[type="email"]:focus,
+.comment-form textarea:focus {
+  border-color: #0073aa;
+}
+
+.comment-form input[type="submit"] {
+  padding: 12px 25px;
+  background-color: #0073aa;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.comment-form input[type="submit"]:hover {
+  background-color: #005177;
+}
+
+.no-resize {
+  resize: none !important; /* Add !important to override conflicting styles */
+}
+
+/* 
+  Load More Button
+  ------------------------------------------------
+*/
+#post-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.post-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+  background: #f9f9f9;
+}
+
+#load-more-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#load-more {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+#load-more:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+#load-more:hover {
+  background-color: #0056b3;
+  color: #ffffff;
+}
+
+
+
+/* 
+  sidebar section 
+  ------------------------------------------------
+*/
+
+.portfolioMrMas-sidebar {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100%;
+  text-align: center;
+  background-color: #1f1f1f;
+  color: #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  transition: right 0.3s ease;
+  z-index: 1050;
+}
+
+.portfolioMrMas-sidebar-container {
+  height: 100%; 
+}
+
+.portfolioMrMas-sidebar li {
+  list-style: none;
+}
+
+.portfolioMrMas-sidebar a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.portfolioMrMas-sidebar a:hover {
+  color: #0073aa;
+}
+
+.portfolioMrMas-sidebar.active {
+  right: 0;
+}
+
+.portfolioMrMas-sidebar h1.portfolioMrMas-username,
+.portfolioMrMas-sidebar h2.portfolioMrMas-description,
+.portfolioMrMas-sidebar h3.portfolioMrMas-email {
+  font-weight: 100;
+  color: white;
+}
+
+.portfolioMrMas-sidebar h1.portfolioMrMas-username {
+  font-size: 24px;
+  margin: 0 0 10px;
+}
+.portfolioMrMas-sidebar h2.portfolioMrMas-description,
+.portfolioMrMas-sidebar h3.portfolioMrMas-email {
+  font-size: 15px;
+  margin: 0 0 20px;
+}
+
+.portfolioMrMas-sidebar .image-container {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.portfolioMrMas-sidebar .profile-picture {
+  width: 122px;
+  height: 122px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+
+.portfolioMrMas-sidebar .profile-picture img {
+  width: 100%;
+  height: auto;
+}
+
+.portfolioMrMas-sidebar .portfolioMrMas-social-media-icons {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 10px ;
+  text-align: center;
+}
+
+.portfolioMrMas-sidebar .portfolioMrMas-social-media-icons a {
+  font-size: 20px;
+}
+
+.toggle-sidebar {
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 25px 0 0 25px;
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.portfolioMrMas-sidebar .widget_text p {
+  font-size: 14px;
+  margin: 10px 0;
+  line-height: 1.6;
+  background-color: rgba(244, 244, 244, 0.3);
+  padding: 5px;
+  border-radius: 50px;
+}
+
+.portfolioMrMas-sidebar .wp-block-categories,
+.portfolioMrMas-sidebar .widget_tag_cloud {
+  padding: 5px;
+}
+
+.portfolioMrMas-sidebar a.tag-cloud-link {
+  font-size: 12px !important;
+  margin: 2px 5px;
+  background-color: rgba(244, 244, 244, 0.3);
+  border-radius: 5px;
+  padding: 5px;
+  transition: background-color 0.5s ease;
+}
+
+.portfolioMrMas-sidebar a.tag-cloud-link:hover {
+  background-color: #0073aa;
+  color: white;
+}
+
+.portfolioMrMas-sidebar .wp-block-categories li{
+  display: inline-block;
+  margin: 2px 5px;
+}
+
+.portfolioMrMas-sidebar .sidebar-scroll {
+  overflow-y: auto; 
+  max-height: 100%; 
+}
+
+.faded-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1049; /* Slightly below the sidebar's z-index */
+  display: none; /* Hidden by default */
+  transition: opacity 0.3s ease;
+}
+
+.faded-background.active {
+  display: block;
+  opacity: 1;
+}
+
+
+/* 
+  Media Queries 
+  ------------------------------------------------
+*/
+@media (max-width: 768px) {
+  .navbar-portfolioMrMas .nav li {
+    margin: 0 10px;
+  }
+
+  .navbar-portfolioMrMas .nav li a {
+    font-size: 14px;
+  }
+
+  .header-container {
+    height: 200px;
+  }
+
+  .site-title {
+    font-size: 30px;
+  }
+
+  .site-description {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-portfolioMrMas .nav li {
+    margin: 0 5px;
+  }
+
+  .navbar-portfolioMrMas .nav li a {
+    font-size: 12px;
+  }
+
+  .header-container {
+    height: 150px;
+  }
+
+  .site-title {
+    font-size: 24px;
+  }
+
+  .site-description {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,78 @@
+/* @package portfolioMrMas */
+
+.portfolioMrMas-sidebar-preview,
+.portfolioMrMas-general-form {
+  display: inline-blog;
+  float: left;
+}
+
+.portfolioMrMas-sidebar-preview {
+  width: 280px;
+  background-color: #1f1f1f;
+  padding: 20px;
+  text-align: center;
+  margin-right: 20px;
+}
+.portfolioMrMas-sidebar-preview a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.portfolioMrMas-sidebar-preview a:hover {
+  color: #0073aa;
+}
+
+.portfolioMrMas-sidebar {
+  display: block;
+  text-align: center;
+}
+
+h1.portfolioMrMas-username,
+h2.portfolioMrMas-description,
+h3.portfolioMrMas-email {
+  font-weight: 100;
+  color: white;
+}
+
+h1.portfolioMrMas-username {
+  font-size: 24px;
+  margin: 0 0 10px;
+}
+h2.portfolioMrMas-description,
+h3.portfolioMrMas-email {
+  font-size: 15px;
+  margin: 0 0 20px;
+}
+
+.image-container {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.profile-picture {
+  width: 122px;
+  height: 122px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: auto;
+}
+
+.portfolioMrMas-social-media-icons {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.portfolioMrMas-social-media-icons a {
+  font-size: 20px;
+}
+
